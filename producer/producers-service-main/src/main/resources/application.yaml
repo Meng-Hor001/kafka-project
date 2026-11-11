@@ -19,6 +19,8 @@ spring:
 app:
   kafka:
     topic: demo-topic
+    partitions: 3
+    replicas: 1
 
 server:
   port: 9090

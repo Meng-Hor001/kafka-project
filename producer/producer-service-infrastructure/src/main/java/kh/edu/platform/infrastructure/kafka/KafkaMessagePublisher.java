@@ -3,7 +3,6 @@ package kh.edu.platform.infrastructure.kafka;
 import kh.edu.platform.application.entity.PublishResult;
 import kh.edu.platform.application.port.MessagePublisher;
 import kh.edu.platform.infrastructure.mapper.PublishMapper;
-import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,8 +11,8 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.CompletableFuture;
 
+
 @Component
-@RequiredArgsConstructor
 public class KafkaMessagePublisher implements MessagePublisher {
     private final KafkaTemplate<String, String> kafkaTemplate;
     private final String topic;
