@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: producer
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: all
+      properties:
+        enable.idempotence: true
+        request.timeout.ms: 10000
+        delivery.timeout.ms: 30000
+        max.block.ms: 10000
+
+    mvc:
+      async:
+        request-timeout: 45s
+app:
+  kafka:
+    topic: demo-topic
+
+server:
+  port: 9090

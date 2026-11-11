@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/build-logic" name="build-logic">
+                <projects>
+                  <project path="$PROJECT_DIR$/build-logic" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/producer" name="producer-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/producer" />
+                  <project path="$PROJECT_DIR$/producer/producer-service-application" />
+                  <project path="$PROJECT_DIR$/producer/producer-service-infrastructure" />
+                  <project path="$PROJECT_DIR$/producer/producer-service-restapi" />
+                  <project path="$PROJECT_DIR$/producer/producers-service-main" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/build-logic" />
+            <option value="$PROJECT_DIR$/producer" />
+            <option value="$PROJECT_DIR$/producer/producer-service-application" />
+            <option value="$PROJECT_DIR$/producer/producer-service-infrastructure" />
+            <option value="$PROJECT_DIR$/producer/producer-service-restapi" />
+            <option value="$PROJECT_DIR$/producer/producers-service-main" />
+          </set>
+        </option>
+        <option name="myGradleHome" value="" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+plugins {
+    id 'spring-boot-common-conventions'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'kh.edu.istad:producer-service-infrastructure'
+    implementation 'kh.edu.istad:producer-service-application'
+    implementation 'kh.edu.istad:producer-service-restapi'
+
+
+    implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+
+}
+
+test {
+    useJUnitPlatform()
+}
