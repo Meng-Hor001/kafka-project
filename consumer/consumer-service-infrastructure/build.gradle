@@ -1,0 +1,19 @@
+plugins {
+    id 'spring-common-conventions'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':consumer-service-application')
+    implementation 'org.springframework.boot:spring-boot-starter-kafka'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}

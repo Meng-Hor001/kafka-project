@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'kh.edu.istad:producer-service-application'
+    implementation project(':producer-service-application')
 
     compileOnly 'org.mapstruct:mapstruct:1.6.3'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.3'

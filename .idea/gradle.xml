@@ -12,6 +12,14 @@
                   <project path="$PROJECT_DIR$/build-logic" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/consumer" name="consumer-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/consumer" />
+                  <project path="$PROJECT_DIR$/consumer/consumer-service-application" />
+                  <project path="$PROJECT_DIR$/consumer/consumer-service-infrastructure" />
+                  <project path="$PROJECT_DIR$/consumer/consumer-service-main" />
+                </projects>
+              </build>
               <build path="$PROJECT_DIR$/producer" name="producer-service">
                 <projects>
                   <project path="$PROJECT_DIR$/producer" />
@@ -29,6 +37,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/build-logic" />
+            <option value="$PROJECT_DIR$/consumer" />
+            <option value="$PROJECT_DIR$/consumer/consumer-service-application" />
+            <option value="$PROJECT_DIR$/consumer/consumer-service-infrastructure" />
+            <option value="$PROJECT_DIR$/consumer/consumer-service-main" />
             <option value="$PROJECT_DIR$/producer" />
             <option value="$PROJECT_DIR$/producer/producer-service-application" />
             <option value="$PROJECT_DIR$/producer/producer-service-infrastructure" />
@@ -36,7 +48,6 @@
             <option value="$PROJECT_DIR$/producer/producers-service-main" />
           </set>
         </option>
-        <option name="myGradleHome" value="" />
       </GradleProjectSettings>
     </option>
   </component>

@@ -1,4 +1,5 @@
 rootProject.name = 'kafka-project'
 
 includeBuild 'producer'
+includeBuild 'consumer'
 includeBuild 'build-logic'

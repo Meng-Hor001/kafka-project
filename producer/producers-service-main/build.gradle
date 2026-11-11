@@ -7,13 +7,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'kh.edu.istad:producer-service-infrastructure'
-    implementation 'kh.edu.istad:producer-service-application'
-    implementation 'kh.edu.istad:producer-service-restapi'
-
+    implementation project(':producer-service-infrastructure')
+    implementation project(':producer-service-application')
+    implementation project(':producer-service-restapi')
 
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
-
 }
 
 test {
